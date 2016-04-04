@@ -4,7 +4,6 @@ def search(tab, tryToMax):
 	for i in range(len(tab)):
 		if isinstance( tab[i], int ) is False:
 			tab[i] = search(tab[i], not tryToMax)
-			return search(tab, tryToMax)
 	
 	if tryToMax:
 		return max(tab)

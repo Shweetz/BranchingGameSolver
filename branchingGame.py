@@ -13,7 +13,6 @@ def search(tab, tryToMax):
 		if isinstance( tab[i], int ) is False:
 			print("calc tab[" + str(i) + "]: " + str(tab[i]))
 			tab[i] = search(tab[i], not tryToMax)
-			return search(tab, tryToMax)
 	
 	if tryToMax:
 		print("max: " + str(max(tab)))
