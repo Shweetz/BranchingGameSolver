@@ -1,4 +1,4 @@
-tab1 = [[[2,3],[1,4]],[[4,5],[0,6]]]
+tab1 = [[[2,3],[1,4]],[[4,5],[6,0]]]
 
 def search(tab, tryToMax):
 	for i in range(len(tab)):
@@ -10,4 +10,4 @@ def search(tab, tryToMax):
 	else:
 		return min(tab)
 
-print(search(tab1, True))
+print("Score: " + str(search(tab1, True)) + " (if the 1st player wants to maximize)")
